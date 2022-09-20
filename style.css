@@ -1,0 +1,199 @@
+section:nth-of-type(1) {
+    background-image: url(img/background-desktop.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section:nth-of-type(3), section:nth-of-type(5) {
+    background-color: #3B4157;
+}
+
+footer {
+    background-color: #F5F5F5;
+}
+
+.imgFit {
+    object-fit: scale-down;
+    max-width: 100%;
+}
+
+.svgAfter {
+    position: absolute;
+    z-index: 1;
+    transform: translate(85%, 25%);
+}
+
+.accordionCustom {
+    background-color: #3B4157; 
+    color: white; 
+    font-size: medium; 
+    border: none; 
+    width: 100%; 
+    text-align: left;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+/* Estilos Gerais de Texto */
+
+    .sectionTitle {
+        font-family: "Roboto";
+        font-weight: 700;
+        color: #3B4157;
+    }
+
+    .sectionSubtitle {
+        font-family:"Roboto Slab";
+        font-weight: 400;
+        color: orangered;
+    }
+
+    .sectionText {
+        font-family:"Roboto";
+        font-weight: 300;
+    }
+
+    .strongText {
+        font-family:"Roboto";
+        font-weight: 700;
+    }
+
+/* Cards */
+
+    .cardTitle {
+        background-color: #606160;
+        color: white;
+        font-family: "Roboto";
+        font-weight: 700;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .cardButtonInactive {
+        border-style: none;
+        background-color: #E6E7E7;
+        color: #A6A7A7;
+        font-family: "Roboto";
+        font-weight: 700;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .cardButtonActive {
+        border-style: none;
+        background-color: #1FAB36;
+        color: white;
+        font-family: "Roboto";
+        font-weight: 700;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .cardButtonNumber {
+        font-size:xx-large;
+    }
+
+    .cardBuyButton {
+        border-style: none;
+        background-color: #FF594E;
+        color: white;
+        font-family: "Roboto";
+        font-weight: 700;
+        text-align: center;
+        border-radius: 50px;
+    }
+
+    .cardListStyle {
+        list-style-type: none;
+        font-family: "Roboto";
+    }
+
+    .cardCheckbox {
+        background-color: #E7E7E7;
+        font-family: "Roboto";
+        font-weight: 300;
+    }
+
+/* iframe Responsivo */
+
+    .video-container {
+        overflow: hidden;
+        position: relative;
+        width:100%;
+    }
+
+    .video-container::after {
+        padding-top: 56.25%;
+        display: block;
+        content: '';
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+/* Utilitário */
+
+    @font-face {
+        font-family: 'EffraBold';
+        src: url('font/effra_std_bd-webfont.woff') format('woff'),
+            url('font/Effra_Std_Bd.ttf') format('truetype');
+    }
+
+    .panel { 
+        display: none; 
+    }
+
+    .show { 
+        display: block; 
+    }
+
+
+/* Checkbox Customizado do Card */
+
+    .checkContainer {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+    }
+
+    .checkContainer input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #E7E7E7;
+        background-image: url(img/check-icon-mobile.png);
+    }
+
+    .checkContainer input:checked ~ .checkmark {
+        background-image: url(img/check-icon-mobile-checked.png);
+        background-repeat: no-repeat;
+    }
+
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    .checkContainer input:checked ~ .checkmark:after {
+        display: block;
+    }
