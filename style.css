@@ -21,7 +21,7 @@ footer {
 .svgAfter {
     position: absolute;
     z-index: 1;
-    transform: translate(85%, 25%);
+    transform: translate(70%, 25%);
 }
 
 .accordionCustom {
